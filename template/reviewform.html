@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html>
+  
+  <head>
+
+    <title>Movie Classification</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='gg.css') }}">
+  </head>
+  <body>
+
+
+
+<div class="card">
+               
+  <div class="row">
+      
+      
+      
+      <div class="col-10">
+          
+          <div class="comment-box ml-2">
+              
+              <h4>Add a comment</h4>
+              
+              <div class="rating"> 
+                  <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                  <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> 
+                  <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                  <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                  <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+              </div>
+              
+              {% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results" >
+  <div class="comment-area">
+  <dl> {{ render_field(form.moviereview, cols='50', rows='10') }} </dl>
+</div>
+  <div>
+	  <input type=submit value='Submit review' name='submit_btn'>
+  </div>
+</form>
+              
+<form action="/dashboard">
+  <input type=submit value='Return to home'>
+</form>
+          
+          
+          </div>
+      
+      </div>
+  
+  
+  </div>
+
+</div>
+</html>

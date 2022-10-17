@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Classification</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+  </head>
+  <body>
+
+
+<h3 style = "color:#e60b0b ;font-family: 'Kaushan Script', cursive; font-size:2em;">Your movie review:</h3>
+<div style = "font-family: 'Kaushan Script', cursive; font-size:2em; color:#00f351 ;" >{{ content }}</div>
+
+<h3>Prediction:</h3>
+<div style = "font-family: 'Kaushan Script', cursive; font-size:2em; color:#e60b0b ;">This movie review is <strong>{{ prediction }}</strong></div>
+<h2><div style = "font-family: 'Kaushan Script', cursive;
+	font-size:1em;
+	letter-spacing:3px;
+	color:#e60b0b ;
+	margin:0;
+	margin-bottom:20px;">Negative probability</div></h2>
+<div class="pie animate"  style="--p:{{probability }}; color:#e60b0b ;" > {{ probability }}</div>
+<h2><div style = "font-family: 'Kaushan Script', cursive;
+	font-size:1em;
+	letter-spacing:3px;
+	color:#07f361 ;
+	margin:0;
+	margin-bottom:20px;">Positive probability</div></h2>
+
+<div class="pie animate" style="--p:{{ 100-probability }};color:#07f361 ;--c:lightgreen"> {{probability_2 }}</div>
+<div id='button'>
+	  <form action="/thanks" method="post">
+	    <input type=submit value='Correct' name='feedback_button'>
+		<input type=submit value='Incorrect' name='feedback_button'>
+		<input type=hidden value='{{ prediction }}' name='prediction'>
+		<input type=hidden value='{{ content }}' name='review'>
+	  </form>
+</div>
+
+<div id='button'>
+	  <form action="/sentiment">
+	    <input type=submit value='Submit another review'>
+		
+	  </form>
+</div>
+
+
+
+  </body>
+</html>
