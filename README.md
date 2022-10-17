@@ -26,4 +26,4 @@ Recommender system has the ability to predict whether a particular user would pr
 ## METHOD
 For the recommendeded system, cosine similarty is applied to search the relative movies in the list of all movies. Weights are assigned to movies, the more similar of the movie, the higher weight is assigned to the movie\
 For the Sentiment Classifier, the system is used simple supervised algorithm Naive Bayes Classifier. However, this algorithm is "naive" because the structure (grammar) of the sentence is neglected and the words are independent to other. However, it is still one of the effective method for analyzing the sentiment of a sentence.\
-![Recommendation App](https://github.com/HungVoCs47/Movie-Recommended-System/blob/master/image/Screenshot%20(1439).png)
+![Recommendation App](![Recommendation App](https://github.com/HungVoCs47/Movie-Recommended-System/blob/master/image/Screenshot%20(1439).png)
