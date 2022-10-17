@@ -27,7 +27,6 @@ Recommender system has the ability to predict whether a particular user would pr
 For the recommendeded system, cosine similarty is applied to search the relative movies in the list of all movies. Weights are assigned to movies, the more similar of the movie, the higher weight is assigned to the movie\
 For the Sentiment Classifier, the system is used simple supervised algorithm Naive Bayes Classifier. However, this algorithm is "naive" because the structure (grammar) of the sentence is neglected and the words are independent to other. However, it is still one of the effective method for analyzing the sentiment of a sentence.\
 Naive Bayes Classifier:
-  BAYESIAN CLASSIFICATION REFRESHER: suppose you have a set  of classes
 > (e.g. categories) C := {C_1, ..., C_n}, and a  document D consisting
 > of words D := {W_1, ..., W_k}.  We wish to ascertain the probability
 > that the document  belongs to some class C_j given some set of
