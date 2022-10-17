@@ -10,4 +10,8 @@ Recommender system has the ability to predict whether a particular user would pr
 
 
 
+
+
+
+
 ![Recommendation App](https://github.com/HungVoCs47/Movie-Recommended-System/blob/master/image/Screenshot%20(1439).png)
