@@ -60,3 +60,4 @@ Naive Bayes Classifier:
 >     P(D) = SUM_j(P(D|C_j)*P(C_j))
 > 
 ![Recommendation App](https://github.com/HungVoCs47/Movie-Recommended-System/blob/master/image/Screenshot%20(1442).png)
+The above image show "I hate this movie" comment is negative comemnt with probability 
